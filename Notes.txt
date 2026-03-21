@@ -1,0 +1,55 @@
+
+container - like virtual machines
+docker -tool to create these virtual machines
+docker is OS level virtualiozation ->containerization
+union file system and layered file system .
+
+earlier =? laptop->os->virtualization software ->rhcl os->ram and rom - wastage of resources
+
+with docker => laptop-os-Docker->container 1 ,container 2 ,container 3 etc
+containers dont have any os.
+with docker - they dont udse base resources,RAM used on processing time only after that it release the RAM.
+
+Unix flavours - linux, mac os, aix,solaris
+Linus flavours - rhcl, ununtu ,centos , amazon linux etc
+
+common core os -unix 
+
+Laptop -> OS(unix-95%,5% RH)->Docker -> containers (VMs) ->c1,c2,c3 
+c1-centos 
+c2-
+c3-
+
+docker hub - docker registry -. contains docker images
+image -OS(CENTOS,AMAZON ,UBUNTU ETC)-but it container just 5 % of core os feature ,remaining 95 % will be taking from base machine unix.
+
+i.e i want centos - 5% centos ,95% unix .
+
+union file system and layered file system -
+=>RH OS--tree package --httpd--git---files/folders =>container A (LAYERS )
+FORMS A LAYER THATS WHY ITS CALLED LAYERED FILE SYSTEM .
+problem -install 100 tools/packages/software in 100 containers 
+solution-> create image from exisiting container ->share with teams 
+problem ->install 2 more software ,uninstall 3 packages 
+solution ->union file system - image format
+
+components of Docker 
+-docker image -contains os(very small)+softwares
+-docker container - like a machine which is created from docker images
+docker file -text file in which we keep all instructions i.e instruction with softwares -image created 
+docker hub/registry-contains ,stores docker images publically
+docker daemon- docker service 
+
+
+Docker workflow 
+-docker file -> docker image ->docker container 
+share image with other -docker hub -pull image from docker hub -create your own containers
+
+
+
+
+
+
+
+
+

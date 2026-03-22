@@ -1,0 +1,27 @@
+Day 3 
+
+##Docker Volumes
+
+#Volumes 
+- just a directory inside a container
+-then we declare this directory as volume and share this volume .
+-concept through which we can share data accross multiple containers .
+-we cant create a volume from exisiting container .
+-Volume instruction in dockerfile - create volume 
+-1:1 sharing at a time 
+-cant share one volumne with multiple containers at a time.
+-volume will not be included when you update a docker image .
+
+#map volumes in 2 ways
+1- container to container 
+2-host - container/containers
+
+docker run -it --name newcontainer --volumes-from container1 ubuntu /bin/bash
+
+docker start containername
+docker attach containername 
+
+
+# docker run -it --name mycontainernew -v/vikas 
+vikas - volume at root level
+

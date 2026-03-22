@@ -1,0 +1,4 @@
+FROM ubuntu
+RUN apt update -y
+RUN echo "hey custom docker file by vikas " > /tmp/vikascustom
+

@@ -46,6 +46,53 @@ Docker workflow
 share image with other -docker hub -pull image from docker hub -create your own containers
 
 
+Day 2-
+yum install docker -y
+service docker start
+chkconfig docker on
+docker ps
+
+
+create container 
+docker run -it ubuntu/bin/bash
+
+run- create container 
+ubuntu -image 
+-it -interactive mode (inside the container)
+/bin/bash -shell (default linux shell we called bash shell -taken out from boin directory)
+
+ec2(base machine )-[docker hub -contains images i.e ubuntu]
+step 1-pulled ubuntu image from docker hub
+step 2 - take one copy of that image (ubuntu) and it creates one container(VM).
+step3- inside container(proof -cat /etc/os-relase )
+
+docker images
+docker ps (shoes only running containers)
+docker ps -a (all container (running,stopped etc)
+docker serach ubuntu 
+docker pull centos
+
+docker rename oldname "new name"
+docker run --name "custom name " -it ubuntu  /bin/bash
+want to go to any cointainer ?
+first start and then enter 
+what if its stopped ?
+- docker start containernname 
+
+docker attach containername/id
+
+delete a container ?
+stop and then delete 
+docker stop containername
+docker rm containername
+
+want to delete an image ?
+docker rmi imagename/id
+
+
+
+
+
 
 
 

@@ -1,3 +1,51 @@
 Docker Day 2
 
+#how to create docker images 
+3 ways 
+1-directly pull from docker hub
+2-create image from our own docker container
+3-from docker file
+
+1-docker run -it ubuntu /din/bash
+
+2-create -vikaswcontainer and inside this containe rinstall tree package and crreate vikas named directory
+docker run -it --name vikascontainer ubuntu /bin/bash
+
+apt update
+apt install tree -y
+touch vikasfile
+touch vikasdir
+
+now create image from vikascontainer 
+docker commit vikascontainer rahulimage
+
+now create container from rahulimage 
+inside this container - we should see vikasfile vikasdir and tree package 
+docker run -it rahulcontainer rahulimage /bin/bash
+docker start rahulcontainer 
+
+3- docker file 
+Dockerfile-instructions -build 
+
+Rules for docker files 
+1-name should be fixed i.e Dockerfile
+2-key value pair (key must be in upper case)
+3-first instruction must be related to OS.
+From :Ubuntu
+
+i.e
+From ubuntu
+Run update
+Run tree
+
+
+docker build -t testimg .(dockerfile location)
+now create container from testimg
+- docker run -it --name testcontainer testimg /bin/bash
+FROM ubuntu
+RUN apt update -y
+RUN apt install tree -y
+RUN echo "hi vikas" >/tmp/testfile
+
+
 

@@ -1,0 +1,293 @@
+ history
+    1  clear
+    2  yum install docker -y
+    3  service docker start
+    4  checkconfig docker on
+    5  chkconfig docker on
+    6  clear
+    7  docker ps
+    8  docker run -it ubuntu /bin/bash
+    9  pwd
+   10  docker images
+   11  docker ps
+   12  docker ps -a
+   13  docker run -it ubuntu /bin/bash
+   14  docker images
+   15  docker ps -a
+   16  docker search ubuntu
+   17  clear
+   18  docker pull centos
+   19  docker images
+   20  docker pull centos
+   21  cd
+   22  pwd
+   23  docker pull centos
+   24  docker ps -a
+   25  docker rename dreamy_tharp vicky
+   26  docker ps -a
+   27  clear
+   28  ls
+   29  ls -l
+   30  cd
+   31  ls
+   32  yum install git -y
+   33  git --version
+   34  mkdir DockerLearning
+   35  cd DockerLearning/
+   36  git init
+   37  git config --global user.name "vikasch1"
+   38  git config --global user.email "vikaschaudharyds@gmail.com"
+   39  git status
+   40  pwd
+   41  vi NotesDay2.txt
+   42  git status
+   43  git add .
+   44  git commit -m "day 2 notes "
+   45  git remote add origin https://github.com/vikasch1/Docker.git
+   46  git status
+   47  git push origin main
+   48  vi NotesDay2.txt
+   49  git status
+   50  git add .
+   51  git commit -m "docker commands day 2 "
+   52  git remote --v
+   53  git push origin main
+   54  git branch -m "main"
+   55  git branch
+   56  git status
+   57  git push origin main
+   58  git pull origin main
+   59  git status
+   60  git push origin main
+   61  git checkout main
+   62  git pull
+   63  git pull main
+   64  git pull origin main
+   65  git remote --v
+   66  git pull origin main
+   67  git pull --rebase
+   68   git branch --set-upstream-to=origin/<main> main
+   69  pwd
+   70  ls
+   71  git clone https://github.com/vikasch1/Docker.git
+   72  git status
+   73  cd Docker
+   74  git status
+   75  ls
+   76  cd
+   77  ls
+   78  cd DockerLearning/
+   79  ls
+   80  rm -rf NotesDay2.txt
+   81  ls
+   82  cd Docker
+   83  ls
+   84  vi NotesDay2.txt
+   85  git status
+   86  git add .
+   87  git commit -m "docker day 2 notes file added "
+   88  git push origin main
+   89  git log --oneline
+   90  docker ps
+   91  docker run -it --name vikascontainer ubuntu /bin/bash
+   92  docker ps -a
+   93  docker commit vikascontainer rahulimage
+   94  docker run -it rahulcontainer rahulimage /bin/bash
+   95  docker ps
+   96  docker ps -a
+   97  docker commit vikascontainer rahulimage
+   98  docker ps -a
+   99  docker images
+  100  docker ps -a
+  101  docker images
+  102  docker run -it --name rahulcontainer rahulimage /bin/bash
+  103  docker ps -a
+  104  docker images
+  105  docker exec -it rahulcontainer bash
+  106  docker start rahulcontainer
+  107  docker exec -it rahulcontainer bash
+  108  docker ps -a
+  109  docker images
+  110  exit
+  111  clear
+  112  docker images
+  113  docker ps
+  114  vi Dokcerfile
+  115  ls
+  116  cd DockerLearning/
+  117  ls
+  118  cd Docker
+  119  ls
+  120  vi Dockerfile
+  121  git status
+  122  docker build -t testimg .
+  123  cd
+  124  docker images
+  125  docker run -it --name testcontainer testimg /bin/bash
+  126  ls
+  127  cd DockerLearning/
+  128  ls
+  129  cd Docker
+  130  ls
+  131  vi Dockerfile
+  132  vi linuxfile1
+  133  ls
+  134  mkdir devops
+  135  cd devops
+  136  touch file1 file 2 file 3 file 4 file5 file6 file{7..12}
+  137  ls
+  138  cd ..
+  139  cd
+  140  tar -cvzf devops.tar.gz devops
+  141  ls
+  142  cd DockerLearning/
+  143  ls
+  144  cd Docker
+  145  ls
+  146  tar -cvzf devops.tar.gz devops
+  147  ls
+  148  rm -rf devops
+  149  ls
+  150  cat Dockerfile
+  151  ls
+  152  docker images
+  153  docker build -t demoimg .
+  154  ls
+  155  docker build -t demoimg ./
+  156  docker build -t demoimg .
+  157  vi Dockerfile
+  158  docker build -t demoimg .
+  159  ls
+  160  cat linuxfile1
+  161  docker images
+  162  docker ps -a
+  163  docker run -it --name democontainer demoimg /bin/bash
+  164  git status
+  165  git add .
+  166  git status
+  167  git commit -m "day 2 - ways of creating images and containers "
+  168  git push origin main
+  169  git log --oneline
+  170  vi vikasdockerfile
+  171  docker build -t sampleimg . -f vikasdockerfile
+  172  docker images
+  173  docker ps -a
+  174  docker run -it --name samplecontainer sampleimg
+  175  docker ps -a
+  176  docker ps
+  177  git status
+  178  cd ..
+  179  git status
+  180  cd ..
+  181  git status
+  182  ls
+  183  ls -la
+  184  cd DockerLearning/
+  185  ls -la
+  186  git sttaus
+  187  git status
+  188  git add .
+  189  git status
+  190  git commit -m "commit"
+  191  git push origin main
+  192  git remote --v
+  193  git pull origin main
+  194  git config pull.rebase false
+  195  git status
+  196  git pull origin main
+  197  git push origin main
+  198  ls
+  199  cd Docker
+  200  ls
+  201  git status
+  202  git add .
+  203  git commit -m "custom docker file '
+  204  git commit -m "custom docker file "
+  205  git push origin main
+  206  git log --oneline
+  207  git status
+  208  git pull origin main
+  209  git status
+  210  git push origin main
+  211  clear
+  212  ls
+  213  vi NotesDay3.txt
+  214  mkdir Day3
+  215  cd Day3
+  216  pwd
+  217  vi Dockerfile
+  218  docker build -t myimg .
+  219  docker images
+  220  docker run -it --name mycontainerday3 myimg /bin/bash
+  221  docker ps
+  222  docker ps -a
+  223  docker stop rahulcontainer
+  224  docker ps -a
+  225  docker ps
+  226  docker images
+  227  clear
+  228  docker ps -a
+  229  docker run -it --name mycontday3(new) --volumes-from mycontainerday3 ubuntu /bin/bash
+  230  docker run -it --name mycontday3new --volumes-from mycontainerday3 ubuntu /bin/bash
+  231  ls
+  232  cd
+  233  ls
+  234  cd Dockerlearning
+  235  cd DockerLearning
+  236  ls
+  237  cd Docker
+  238  ls
+  239  cat NotesDay3.txt
+  240  docker ps
+  241  docker ps -a
+  242  docker start mycontainerday3
+  243  ls
+  244  docker ps
+  245  docker stop mycontainerday3
+  246  docker ps
+  247  docker ps -a
+  248  docker start mycontday3new
+  249  ls
+  250  docker ps
+  251  ls
+  252  cd Day3
+  253  ls
+  254  cd ..
+  255  ls
+  256  docker ps
+  257  docker attach mycontday3new
+  258  docker ps
+  259  docker start mycontainerday3
+  260  docker attach mycontainerday3
+  261  ls
+  262  vi NotesDay3.txt
+  263  cd
+  264  docker ps
+  265  docker run -it --name latestcontainer -v/rohan ubuntu /bin/bash
+  266  docker run -it --name mycontainer4 --volumes-from latestcontainer ubuntu /bin/bash
+  267  docker ps
+  268  docker start mycontainer4
+  269  docker attach mycontainer4
+  270  docker start latestcontainer
+  271  docker attach latestcontainer
+  272  pwd
+  273  ls
+  274  cd DockerLearning/
+  275  LS
+  276  ls
+  277  cd Docker
+  278  pwd
+  279  git status
+  280  git add .
+  281  git commit -m "container volume ,volume sharing ,container to container "
+  282  git status
+  283  git push origin main
+  284  git log --oneline
+  285  git branch
+  286  git pull origin main
+  287  git push origin main
+  288  ls
+  289  cat README.md
+  290  cd
+  291  history
+[root@ip-172-31-46-110 ~]#

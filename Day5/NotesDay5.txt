@@ -1,0 +1,19 @@
+###Day 5 
+
+##container to host mapping 
+
+docker run -it --name puneetcontainer -v/root:raman ubuntu /bin/bash
+
+
+##Port Mapping 
+
+base machine (ec2)- container (mounted) -go inside the container ,install apache2(ubuntu)+index file - provides container ip address to user - then the request will go to user machine -html loads -data 
+
+but containers dont have ip address(public ip) - then how do we access the index file?
+solution -> concept called port mapping in docker or port expose .
+
+container do have ports then we will take default port i.e 80 (http) ,base machine have public ip address -take base machine port i.e 8081 and then map these 2 ports .
+
+base machine ip address : 8081 - response - data 
+
+

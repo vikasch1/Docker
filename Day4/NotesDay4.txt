@@ -1,0 +1,13 @@
+Day 4
+
+#container to host volume mapping
+
+- docker run -it --name montucontainer -v/root:/govind ubuntu /bin/bash
+
+docker inspect command to see if a dir is volume or not.
+
+docker inspect montucontainer
+
+
+
+

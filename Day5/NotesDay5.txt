@@ -17,3 +17,23 @@ container do have ports then we will take default port i.e 80 (http) ,base machi
 base machine ip address : 8081 - response - data 
 
 
+not in interactive mode (-it) ,should be in td mode-detached mode
+-it - attach command to go inside the container 
+-rd - exec command 
+
+docker run -td --name webcont1 -p 8081:80 ubuntu /bin/bash
+apt update
+apt-get install apach2 -y
+cd /var/www/html
+echo "google hi" >index.html
+
+ service apache2 restart
+service apache2 restart
+
+
+
+
+
+
+
+

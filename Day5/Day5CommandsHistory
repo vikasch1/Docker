@@ -1,0 +1,13 @@
+1  apt-get apache2 -y
+    2  apt update
+    3  apt-get install apche2 -y
+    4  cd /var/www/html
+    5  apt-get install apache2 -y
+    6  cd /var/www/html
+    7  echo "Google 2 " >index.html
+    8  service apache2 restart
+    9  service apache2 status
+   10  service apache2 restart
+   11  history
+
+
